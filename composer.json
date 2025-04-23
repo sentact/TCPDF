@@ -3,7 +3,8 @@
     "type": "library",
     "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
     "homepage": "http://www.tcpdf.org/",
-    "license": "LGPL-3.0-only",
+    "version": "6.9.3",
+    "license": "LGPL-3.0-or-later",
     "authors": [
         {
             "name": "Nicola Asuni",
@@ -12,15 +13,14 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=7.1.0",
+        "ext-curl": "*"
     },
     "autoload": {
         "classmap": [
             "config",
             "include",
             "tcpdf.php",
-            "tcpdf_parser.php",
-            "tcpdf_import.php",
             "tcpdf_barcodes_1d.php",
             "tcpdf_barcodes_2d.php",
             "include/tcpdf_colors.php",
@@ -32,11 +32,6 @@
             "include/barcodes/datamatrix.php",
             "include/barcodes/pdf417.php",
             "include/barcodes/qrcode.php"
-        ]
-    },
-    "archive": {
-        "exclude": [
-            "/examples"
         ]
     }
 }
